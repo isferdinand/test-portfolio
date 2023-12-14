@@ -1,0 +1,71 @@
+@import 'variables.scss';
+
+.container {
+  max-width: 1024px;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: $size-5xl;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.bottom-line {
+  background-color: $primary-color;
+  margin: 0.5rem auto 1rem auto;
+  width: 50px;
+  height: 5px;
+}
+
+.lead {
+  font-size: $size-base;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.strong {
+  color: $primary-color;
+}
+
+.btn {
+  background: $primary-color;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 192, 255, 0.5),
+    0 6px 6px rgba(0, 192, 255, 0.5), 0 0 100px - 10px $primary-color;
+  cursor: pointer;
+  color: $light-color;
+  font-size: $size-base;
+  padding: 0.8rem 1rem;
+  margin-top: 1rem;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background: $light-color;
+    color: $dark-color;
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(0, 192, 255, 0.25),
+      0 10px 10px rgba(0, 192, 255, 0.22), 0 0 120px - 10px $primary-color;
+    cursor: pointer;
+    // transition: all 0.5s ease;
+  }
+}
